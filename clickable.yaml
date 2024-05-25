@@ -27,3 +27,6 @@ install_bin:
 install_lib:
   - /usr/share/gdb
   - /usr/lib/valgrind
+  - /usr/lib/$ARCH_TRIPLET/libbabeltrace*.so*
+  - /usr/lib/$ARCH_TRIPLET/libdw*.so*
+  - /usr/lib/$ARCH_TRIPLET/libmpfr.so*
