@@ -1,4 +1,8 @@
 #!/bin/bash
 
-sudo env VALGRIND_LIB=/opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin \
-    /opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/valgrind $@
+for f in $(ls /etc/click/databases); do
+    source <(grep = /etc/click/databases/$f | sed 's/ *= */=/g')
+done
+
+sudo env VALGRIND_LIB=${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin \
+    ${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/valgrind $@

@@ -1,3 +1,7 @@
 #!/bin/bash
 
-sudo /opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/strace $@
+for f in $(ls /etc/click/databases); do
+    source <(grep = /etc/click/databases/$f | sed 's/ *= */=/g')
+done
+
+sudo ${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/strace $@

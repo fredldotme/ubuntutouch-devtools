@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo env LD_LIBRARY_PATH=/odm/lib64:/vendor/lib64:/system/lib64 lxc-attach -n android -e -- logcat
+sudo env LD_LIBRARY_PATH=/odm/lib64:/vendor/lib64:/system/lib64 /usr/bin/lxc-attach -n android -e -- logcat
