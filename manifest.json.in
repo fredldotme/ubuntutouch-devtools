@@ -1,0 +1,15 @@
+{
+    "name": "devtools.fredldotme",
+    "description": "Tools for debugging and development",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Dev Tools",
+    "hooks": {
+        "devtools": {
+            "apparmor": "devtools.apparmor",
+            "desktop":  "devtools.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Alfred Neumayer <dev.beidl@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

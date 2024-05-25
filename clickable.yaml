@@ -1,0 +1,29 @@
+clickable_minimum_required: 8.0.0
+builder: cmake
+kill: devtools
+
+dependencies_target:
+  - gdb
+  - gdbserver
+  - strace
+  - valgrind
+
+install_bin:
+  - /usr/bin/aarch64-linux-gnu-run
+  - /usr/bin/gcore
+  - /usr/bin/gdb
+  - /usr/bin/gdb-add-index
+  - /usr/bin/gdbtui
+  - /usr/bin/gdbserver
+  - /usr/bin/strace
+  - /usr/bin/strace-log-merge
+  - /usr/bin/valgrind
+  - /usr/bin/valgrind-di-server
+  - /usr/bin/valgrind-listener
+  - /usr/bin/valgrind.bin
+  - /usr/lib/$ARCH_TRIPLET/valgrind/*
+  - $ROOT/wrappers/*
+
+install_lib:
+  - /usr/share/gdb
+  - /usr/lib/valgrind

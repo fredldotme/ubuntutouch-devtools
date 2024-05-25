@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/strace $@

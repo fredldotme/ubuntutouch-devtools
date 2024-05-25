@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo env VALGRIND_LIB=/opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin \
+    /opt/click.ubuntu.com/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/valgrind $@

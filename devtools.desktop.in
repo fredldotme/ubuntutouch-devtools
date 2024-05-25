@@ -1,0 +1,9 @@
+[Desktop Entry]
+_Name=Dev Tools
+Exec=devtools %U
+Icon=assets/logo.svg
+Terminal=false
+Type=Application
+X-Lomiri-Touch=true
+X-Lomiri-Splash-Show-Header=true
+X-Lomiri-Splash-Color=#666666
