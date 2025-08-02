@@ -1,4 +1,5 @@
-clickable_minimum_required: 8.0.0
+clickable_minimum_required: 8.3.1
+framework: ubuntu-touch-24.04-1.x
 builder: cmake
 kill: devtools
 
@@ -30,3 +31,5 @@ install_lib:
   - /usr/lib/$ARCH_TRIPLET/libbabeltrace*.so*
   - /usr/lib/$ARCH_TRIPLET/libdw*.so*
   - /usr/lib/$ARCH_TRIPLET/libmpfr.so*
+  - /usr/lib/$ARCH_TRIPLET/libsource-highlight.so*
+  - /usr/lib/$ARCH_TRIPLET/libdebuginfod*.so*
