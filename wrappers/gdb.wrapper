@@ -4,7 +4,8 @@ for f in $(ls /etc/click/databases); do
     source <(grep = /etc/click/databases/$f | sed 's/ *= */=/g')
 done
 
-sudo env LD_LIBRARY_PATH=${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH \
+env LD_LIBRARY_PATH=${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH \
      PYTHONPATH=${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu/gdb/python \
      DEBUGINFOD_URLS="https://debuginfod.ubuntu.com" \
+     DEBUGINFOD_CACHE_PATH="$HOME/.cache/gdb" \
      ${root}/devtools.fredldotme/current/lib/aarch64-linux-gnu/bin/gdb $@
