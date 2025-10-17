@@ -9,7 +9,7 @@
             "desktop":  "devtools.desktop"
         }
     },
-    "version": "0.3",
+    "version": "0.4",
     "maintainer": "Alfred Neumayer <dev.beidl@gmail.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
